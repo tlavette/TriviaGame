@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Triva Game</title>
+
+
+</head>
+
+<body>
+    <div id ="travel-trivia"></div>
+
+    <div id="display">00:00</div>
+
+    <!-- Div containing timer start and new game -->
+    <div id="buttons">
+        <button id="start">START</button>
+        <button id="newGame">NEW GAME</button>
+    </div>
+
+    <!-- div ids for scoreboard and questions -->
+    <div id ="score"></div>
+    <div id="questions"></div>
+
+    <script>
+    // VARIABLES
+    // ====================================================
+
+    // The array of questions for the quiz
+    const questions = [
+        { q: "What does the word construct mean?", a: "t"},
+        { q: "How many days are in a year?", a: "t"},
+        { q: "How many states are in the United States?", a: "t"},
+        { q: "What is the 6th month of the year?", a: "t"},
+        { q: "Which word is a pronoun?", a: "t"},
+        { q: "How many syllables are in the word September."}   
+
+    ]
+
+    console.log([questions]);
+    
+    // We start the game with a score of 0.
+    const score = 0;
+    console.log("score");
+    
+
+    // Variable to hold the index of current question.
+    const questionIndex = 0;
+    
+    </script>
+    
+
+ 
+
+
+<!-- Added link to the jQuery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- added js app resource -->
+<script src="assets/javascript/app.js"></script>
+
+
+</body>
+
+
+</html>
