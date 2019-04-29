@@ -2,10 +2,12 @@
 
 //start timer on click.
 $("#start").on("click", function() {
-    //  Set the button alert's timeout to run three seconds after the function's called.
+document.getElementById("#quizQuestions").innerHTML = (quizQuestions.questions.choices);
+
+    //  Set the button alert's timeout to run thirty seconds after pressed.
     delayButtonAlert = setTimeout(function() {
       alert("Time is up!  How did you do?");
-    }, 40000);
+    }, 30000);
   });
 
 

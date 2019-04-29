@@ -23,15 +23,26 @@
 
     <!-- div ids for scoreboard and questions -->
     <div id ="score"></div>
-    <div id="questions"></div>
-
+    <div id="quizQuestions"></div>
+     <!-- <input type="radio" name="choices"> -->
     <script>
     // VARIABLES
     // ====================================================
+// Create a test FormData object
+var formData = new FormData();
+formData.append('c', 'What is the capital of Georgia?');
+formData.append('d', 'How many syllables is in the word investigate?');
 
+// Display the values
+for (var value of formData.values()) {
+   console.log(value); 
+   
+}
+    
     
     // The array of questions for the quiz
     // Questions to display in objects
+
     const quizQuestions = [
         {
         question: "What is the capital of Georgia?",
