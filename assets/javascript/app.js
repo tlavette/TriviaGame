@@ -1,10 +1,14 @@
 
 
-// start timer on click
+//start timer on click.
 $("#start").on("click", function() {
-    //  Set alert for 30 seconds after the start button is clicked.
+    //  Set the button alert's timeout to run three seconds after the function's called.
     delayButtonAlert = setTimeout(function() {
-      alert("Game Over: How did you do?");
-    }, 30000);
+      alert("Time is up!  How did you do?");
+    }, 40000);
   });
+
+
+
+
 

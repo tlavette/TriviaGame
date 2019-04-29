@@ -29,22 +29,94 @@
     // VARIABLES
     // ====================================================
 
+    
     // The array of questions for the quiz
-    const questions = [
-        { q: "What does the word construct mean?", a: "t"},
-        { q: "How many days are in a year?", a: "t"},
-        { q: "How many states are in the United States?", a: "t"},
-        { q: "What is the 6th month of the year?", a: "t"},
-        { q: "Which word is a pronoun?", a: "t"},
-        { q: "How many syllables are in the word September."}   
+    // Questions to display in objects
+    const quizQuestions = [
+        {
+        question: "What is the capital of Georgia?",
 
-    ]
+        choices: {
+            a: "Alabama",
+            b: "Los Angeles",
+            c: "Atlanta",
+            d: "Toronto"
 
-    console.log([questions]);
+        },
+
+        correctAnswer: "c"
+    },
+
+    // question #2
+    {
+    question: "How many syllables is in the word investigate?",
+
+choices: {
+    a: "2",
+    b: "1",
+    c: "7",
+    d: "4"
+
+},
+
+correctAnswer: "d"
+},
+
+// question #3
+{
+question: "Which sentence is the correct past tense of the verb (go)?",
+
+choices: {
+    a: "Yesterday I went to the store to buy some clothes",
+    b: "Yesterday I'm going to the store to buy some clothes",
+    c: "Yesterday I will go to the store to buy some clothes",
+    d: "Yesterday I should go to the store to buy some clothes"
+
+},
+
+correctAnswer: "a"
+},
+
+//  question #4
+{
+question: "If the cost of bananas are $.49 per pound, how much does it cost for 4.5 pounds of bananas?",
+
+choices: {
+    a: "$2.50",
+    b: "$3.70",
+    c: "$2.21",
+    d: "$8.00"
+
+},
+
+correctAnswer: "c"
+},
+
+// question #5
+{
+question: "What do the stars represent in the flag of the United States?",
+
+choices: {
+    a: "The number of members in The Congress",
+    b: "The number of States in the United States",
+    c: "The number of US Presidents",
+    d: "The year the US won it's independence from England"
+
+},
+
+correctAnswer: "b"
+}
+
+    ];
+
+console.log(quizQuestions);
+
+
+
     
     // We start the game with a score of 0.
     const score = 0;
-    console.log("score");
+    console.log(score);
     
 
     // Variable to hold the index of current question.
