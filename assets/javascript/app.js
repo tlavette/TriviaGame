@@ -53,35 +53,40 @@ const quizQuestions = [
 ];
 
 
+console.log(quizQuestions);
+
 function Question(props) {
-    var container = $("<div>");
-    var header = $("<h2>");
-    header.text(props.question);
-    container.append(header);
+var container = $("<div>");
+var header = $("<h2>");
+header.text(props.question);
+container.append(header);
 
+    
 
+   
+//  { 
 
-    // return (
-    //   `<h2>${props.question}</h2>
-    //    <div class="form-group">
-    //      <label>${props.a}</label> 
-    //      <input type="radio" value="${props.a}" />
-    //    </div>
-    //    <div class="form-group">
-    //      <label>${props.b}</label> 
-    //      <input type="radio" value="${props.b}" />
-    //    </div>
-    //    <div class="form-group">
-    //      <label>${props.c}</label> 
-    //      <input type="radio" value="${props.c}" />
-    //    </div>
-    //     <div class="form-group">
-    //      <label>${props.d}</label> 
-    //      <input type="radio" value="${props.d}" />
-    //    </div>`
+//     return (
+//       `<h2>${props.question}</h2>
+//        <div class="form-group">
+//          <label>${props.question}</label> 
+//          <input type="radio" value="${props.question}" />
+//        </div>
+//        <div class="form-group">
+//          <label>${props.b}</label> 
+//          <input type="radio" value="${props.question}" />
+//        </div>
+//        <div class="form-group">
+//          <label>${props.c}</label> 
+//          <input type="radio" value="${props.question}" />
+//        </div>
+//         <div class="form-group">
+//          <label>${props.d}</label> 
+//          <input type="radio" value="${props.question}" />
+//        </div>`
 
-    //    );
-}
+//        );
+// }
 
 function QRow(question) {
     return (
