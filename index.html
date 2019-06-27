@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Triva Game</title>
     <link rel="stylesheet" href="assets/css/style.css">
-
+  
 </head>
 
 <body>
-    <div id="travel-trivia"></div>
+    <div id ="travel-trivia"></div>
 
     <div id="display">00:00</div>
 
@@ -22,16 +22,95 @@
     </div>
 
     <!-- div ids for scoreboard and questions -->
-    <div id="score">Score</div>
-    <br>
-    <div id="quizQuestions">Quiz Question</div>
+    <div id ="score"></div>
+    <div id="quizQuestions"></div>
     <div id="root"></div>
 
-    <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <!-- <input type="radio" name="choices"> -->
+    <script>
+    // VARIABLES
+    // ====================================================
 
-    <!-- added js app resource -->
-    <script src="assets/javascript/app.js"></script>
+    
+    // The array of questions for the quiz
+    // Questions to display in objects
+
+    const quizQuestions = [
+        {
+        question: "What is the capital of Georgia?",
+            a: "Alabama",
+            b: "Los Angeles",
+            c: "Atlanta",
+            d: "Toronto"
+     
+    },
+
+    // question #2
+    {
+    question: "How many syllables is in the word investigate?",
+    a: "2",
+    b: "1",
+    c: "7",
+    d: "4"
+
+},
+
+
+// question #3
+{
+question: "Which sentence is the correct past tense of the verb (go)?",
+    a: "Yesterday I went to the store to buy some clothes",
+    b: "Yesterday I'm going to the store to buy some clothes",
+    c: "Yesterday I will go to the store to buy some clothes",
+    d: "Yesterday I should go to the store to buy some clothes"
+
+},
+
+//  question #4
+{
+question: "If the cost of bananas are $.49 per pound, how much does it cost for 4.5 pounds of bananas?",
+    a: "$2.50",
+    b: "$3.70",
+    c: "$2.21",
+    d: "$8.00"
+
+},
+
+// question #5
+{
+question: "What do the stars represent in the flag of the United States?",
+    a: "The number of members in The Congress",
+    b: "The number of States in the United States",
+    c: "The number of US Presidents",
+    d: "The year the US won it's independence from England"
+}
+
+    ];
+
+console.log(quizQuestions);
+
+
+
+    
+    // We start the game with a score of 0.
+    const score = 0;
+    console.log(score);
+   
+    
+
+    
+    
+    </script>
+    
+    
+ 
+
+
+<!-- Added link to the jQuery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- added js app resource -->
+<script src="assets/javascript/app.js"></script>
 
 
 </body>
